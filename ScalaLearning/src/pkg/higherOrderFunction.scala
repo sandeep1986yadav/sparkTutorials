@@ -12,7 +12,7 @@ object higherOrderFunction {
   def main(args:Array[String]){
     var result = math((x,y)=>x+y,5,6)
     println(result)
-    
+    //Added
     result = math(_+_,5,6)
     println(result)
     
