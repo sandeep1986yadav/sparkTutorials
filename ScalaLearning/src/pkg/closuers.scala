@@ -5,7 +5,7 @@ object closuers {
   // impure closuer is the variable defined is var i.e. it can be changed inside and outside the function
   // pure closure is when the variable defined is val i.e. it can not be changed inside and outside the function
   
-  var a = 10;  
+  var a = 10;
   val b = 15
   val add = (x:Int) => x+a
   

@@ -6,7 +6,7 @@ object functions {
     def add(x: Int, y: Int): Int = {
       return x + y
     }
-
+ 
     def square(x: Int) = x * x
     
     def **(x:Int, y:Int) = x*y // ** is not operator overloading it is function definition 
@@ -23,6 +23,10 @@ object functions {
   def devide(x: Int, y: Int) = x / y
 
   val addition = (x:Int, y:Int) => x+y
+  val modifiedadd = (x:Int, y:Int) => {val i = x+10
+    val j = y+10
+    i+j
+    }
   
   // Function with no return type
   def printx(x:Int) : Unit={
@@ -56,5 +60,7 @@ object functions {
     println(Math.**(2,4))
     
     println(**(2,4))
+    
+    println(modifiedadd(3,5))
   }
 }
