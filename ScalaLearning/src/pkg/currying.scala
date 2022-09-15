@@ -6,6 +6,7 @@ package pkg
 object currying {
   
   def add(x:Int,y:Int) = x+y
+  // Added
   def add2(x:Int)=(y:Int)=>x+y // Currying function
   def add3(x:Int)(y:Int)=x+y //Currying function
   
